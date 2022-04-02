@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+* {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(129, 213, 241);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #575757;
+    width: 350px;
+    height: 475px;
+    border-radius: 30px;
+    box-shadow: 5px 6px 17px 1px rgb(0,0,0,0.7);
+    border-bottom: 15px solid #222;
+    border-right: 10px solid #222;
+}
+
+.calculatorScreen {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #01471c;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 80px;
+    min-height: 80px;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 4px 4px #222;
+}
+
+#history {
+    font-family: 'Digital-7 Mono', sans-serif;
+    font-weight: bold;
+    color: rgb(28, 148, 64);
+    margin-left: 10px;
+    margin-bottom: -3px;
+    margin-top: 10px;
+}
+
+#actual {
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 10px;
+    color: rgb(7, 180, 59);
+    font-family: 'Digital-7 Mono', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 14px rgb(7, 180, 59, 1);
+    filter: brightness(1.35);
+}
+
+.topButtons {
+    display: flex;
+    justify-content: flex-end;
+    width: 81%;
+}
+
+#backspace {
+    width: 80px;
+}
+
+#clear {
+    margin-left: 12px;
+    width: 125px;
+    height: 50px;
+}
+
+#division {
+    width: 60px;
+    margin-left: 12px;
+    background-color: #ededed;
+}
+
+.calculatorButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-top: 15px;
+    width: 300px;
+    row-gap: 15px;
+}
+
+.bottomBtns {
+    width: 60px;
+    height: 50px;
+    background-color: #ededed;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1.5px solid #303030;
+    border-radius: 15px;
+    border-bottom: 3px outset #ededed;
+    box-shadow: 2px 5px 6px 1px rgb(0, 0, 0, 0.3);
+    transition: 0.1s;
+    color: black;
+}
+
+button:hover {
+    transform: translateY(3px);
+    box-shadow: 0 0 0 0;
+    border-bottom: 1.5px solid #303030;
+}
+
+.conections i {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.conections i:hover {
+  color: red;
+  transform: scale(0.9);
+}

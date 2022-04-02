@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SetimoDesafio.css">
+  <script src="https://kit.fontawesome.com/67aa33abf6.js" crossorigin="anonymous">
+  </script>
+  <link href="http://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+  <title>Document</title>
+</head>
+                
+  <body>
+    <div class="calculator">
+      <div class="calculatorScreen">
+        <p id="history"></p>
+        <p id="actual"></p>
+      </div>
+      <div class="topButtons">
+        <button id="backspace" class="topBtns" onclick="backspacePressed()"><i class="fa-solid fa-delete-left" style="font-size: 20px;margin-left: -3px;"></i></button>
+        <button id="clear" class="topBtns" onclick="clearPressed()">AC</button>
+      <button id="division" class="topBtns" onclick="calcPressed('/')"><i class="fa-solid fa-divide"></i></button>
+    </div>
+      <div class="calculatorButtons">
+        <button class="bottomBtns" onclick="numberPressed('7')">7</button>
+        <button class="bottomBtns" onclick="numberPressed('8')">8</button>
+        <button class="bottomBtns" onclick="numberPressed('9')">9</button>
+        <button id="multiply" class="bottomBtns" onclick="calcPressed('*')"><i style="font-size: 25px;margin-top: 8px;" class="fa-regular fa-asterisk"></i></button>
+        <button class="bottomBtns" onclick="numberPressed('4')">4</button>
+        <button class="bottomBtns" onclick="numberPressed('5')">5</button>
+        <button class="bottomBtns" onclick="numberPressed('6')">6</button>
+        <button id="subtract" class="bottomBtns" onclick="calcPressed('-')"><i class="fa-solid fa-minus"></i></button>
+        <button class="bottomBtns" onclick="numberPressed('1')">1</button>
+        <button class="bottomBtns" onclick="numberPressed('2')">2</button>
+        <button class="bottomBtns" onclick="numberPressed('3')">3</button>
+        <button id="addition" class="bottomBtns" onclick="calcPressed('+')"><i class="fa-solid fa-plus"></i></button>
+        <button class="bottomBtns" onclick="numberPressed('0')">0</button>
+        <button class="bottomBtns" onclick="numberPressed('00')">00</button>
+        <button class="bottomBtns" onclick="numberPressed('.')"><i class="fa-solid fa-circle" style="font-size: 4px;"></i></button>
+        <button id="equal" disabled class="bottomBtns" onclick="resultPressed()"><i class="fa-solid fa-equals"></i></button>
+      </div>
+    </div>
+   <div class="conections"><a href="https://github.com/GabrielFTeles/" target="_blank"><i class="fa-brands fa-github" style="font-size: 50px;margin-right: 300px;margin-top: 30px;" ></i></a>
+    </div>
+  </body>
+  <script src="SetimoDesafio.js"></script>
+</html>
